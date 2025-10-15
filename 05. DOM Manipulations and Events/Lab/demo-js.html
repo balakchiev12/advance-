@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="text1" />
+      <button id="some-button" disabled>Send</button>
+    </div>
+
+    <script>
+      let textElement = document.getElementById("text1");
+      let buttonElement = document.getElementById("some-button");
+      textElement.addEventListener("input", (e) => {
+        buttonElement.removeAttribute("disabled");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom part one</title>
+  </head>
+  <body>
+    <h1 id="head">Hello DOM</h1>
+    <br />
+
+    <ol type="I">
+      <li>first</li>
+      <li>SECOND</li>
+      <li>3</li>
+    </ol>
+
+    <button onclick="change()">title</button>
+    <button onclick="solve()">secondTitle</button>
+    <button onclick="refresh()">Refresh</button>
+
+    <script>
+      function change() {
+        let headingElement = document.getElementById("head");
+        headingElement.innerHTML = "Hello <em>JS</em> ! ";
+      }
+    </script>
+    <script src="demo-dom.js"></script>
+    <script>
+      function refresh() {
+        let refreshedName = document.getElementById("head");
+        refreshedName.textContent = "Hello DOM";
+      }
+    </script>
+  </body>
+</html>

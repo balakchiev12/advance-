@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Movie List</h1>
+
+    <ul id="list">
+      <li>The Matnd Furiost</li>
+      <li>Strix</li>
+      <li>Stranger Things</li>
+      <li>Wallking death</li>
+    </ul>
+
+    <script>
+      let movieElements = document.querySelectorAll("#list li");
+
+      movieElements.forEach((x) => {
+        x.addEventListener("click", (e) => {
+          e.currentTarget.style.textDecoration = "line-through";
+        });
+      });
+    </script>
+  </body>
+</html>
